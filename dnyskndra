@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true
         with:
-          node-version: '24'
+          node-version: '>= v20'
 
       - name: Step 1 - Install ClawHub skill
         run: npx clawhub@latest install verified-agent-identity
